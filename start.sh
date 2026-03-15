@@ -1,8 +1,7 @@
 #!/bin/bash
 
-apt update
-apt install -y curl
-
-curl -fsSL https://ollama.com/install.sh | sh
+curl -L https://ollama.com/download/ollama-linux-amd64 -o ollama
+chmod +x ollama
+mv ollama /usr/local/bin/
 
 ollama serve
