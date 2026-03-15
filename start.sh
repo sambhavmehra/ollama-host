@@ -1,7 +1,6 @@
 #!/bin/bash
 
-curl -L https://ollama.com/download/ollama-linux-amd64 -o ollama
+wget https://ollama.com/download/ollama-linux-amd64 -O ollama
 chmod +x ollama
-mv ollama /usr/local/bin/
 
-ollama serve
+./ollama serve
